@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giorgia Missinato</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            transition: background-color 0.5s, color 0.5s, font-family 0.5s;
+ height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: none;
+        }
+
+        /* Impediamo la combinazione di colore di font e sfondo uguale */
+        .color-combo {
+            color: white;
+            background-color: black;
+        }
+
+h1 {
+    width: 95%;
+    font-size: 25px;
+    text-align: left;
+}
+    </style>
+</head>
+<body>
+    <script>
+        // Funzione per generare un colore casuale in formato esadecimale
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        // Funzione per generare un font casuale
+        function getRandomFont() {
+            const fonts = [
+                'Arial, sans-serif',
+                'Verdana, sans-serif',
+                'Georgia, serif',
+                'Times New Roman, serif',
+                'Courier New, monospace',
+            ];
+            return fonts[Math.floor(Math.random() * fonts.length)];
+        }
+
+        // Funzione per cambiare il colore di font, sfondo e il font stesso
+        function changeStyles() {
+            const body = document.body;
+            let newTextColor, newBgColor, newFont;
+
+            // Genera colori e font casuali finché non sono diversi
+            do {
+                newTextColor = getRandomColor();
+                newBgColor = getRandomColor();
+                newFont = getRandomFont();
+            } while (newTextColor === newBgColor);
+
+            // Applica i nuovi colori e il nuovo font
+            body.style.color = newTextColor;
+            body.style.backgroundColor = newBgColor;
+            body.style.fontFamily = newFont;
+        }
+
+        // Richiama la funzione per cambiare stili all'avvio della pagina e al refresh
+        window.addEventListener('load', changeStyles);
+        window.addEventListener('beforeunload', changeStyles);
+    </script>
+    <h1>È successo questo. Poi è successo che. Infatti poi praticamente. Pensa che. Non so se ti rendi conto che. Si è successo così. Praticamente ho fatto questo. Poi questo. E niente poi va a finire che. Eh si è successo questo. Abbiamo deciso così. È stato fatto questo. Quindi poi niente, ha fatto questo. Poi è successo che. Infatti poi praticamente. È stato fatto questo. Hanno deciso di fare. E niente poi va a finire che. Ma pensa che poi. Non so se hai capito che è successo questo. È avvenuto questo. Praticamente ho fatto questo. Ho deciso questo. Ha fatto così. Eh si è successo questo. Infatti poi praticamente. Pensa che. Si è successo così. Praticamente ho fatto questo. Sai che. Poi questo. Oggi ho fatto. Ha deciso così. Ieri sono stata. È successo questo. E niente poi è andata a finire che. È successo questo. Poi è successo che. Infatti poi praticamente. Pensa che. Non so se ti rendi conto che. Si è successo così. Praticamente ho fatto questo. Poi questo. E niente poi va a finire che. Eh si è successo questo. Abbiamo deciso così. È stato fatto questo. Quindi poi niente, ha fatto questo. Poi è successo che. Infatti poi praticamente. È stato fatto questo. Hanno deciso di fare. E niente poi va a finire che. Ma pensa che poi. Non so se hai capito che è successo questo. È avvenuto questo. Praticamente ho fatto questo. Ho deciso questo. Ha fatto così. Eh si è successo questo. Infatti poi praticamente. Pensa che. Si è successo così. Praticamente ho fatto questo. Sai che. Poi questo. Oggi ho fatto. Ha deciso così. Ieri sono stata. È successo questo. E niente poi è andata a finire che. È successo questo. Poi è successo che. Infatti poi praticamente. Pensa che. Non so se ti rendi conto che. Si è successo così. Praticamente ho fatto questo. Poi questo. E niente poi va a finire che. Eh si è successo questo. Abbiamo deciso così. È stato fatto questo. Quindi poi niente, ha fatto questo. Poi è successo che. Infatti poi praticamente. È stato fatto questo. Hanno deciso di fare. E niente poi va a finire che. Ma pensa che poi. Non so se hai capito che è successo questo. È avvenuto questo. Praticamente ho fatto questo. Ho deciso questo. Ha fatto così. Eh si è successo questo. Infatti poi praticamente. Pensa che. Si è successo così. Praticamente ho fatto questo. Sai che. Poi questo. Oggi ho fatto. Ha deciso così. Ieri sono stata. È successo questo. E niente poi è andata a finire che. È successo questo. Poi è successo che. Infatti poi praticamente. Pensa che. Non so se ti rendi conto che. Si è successo così. Praticamente ho fatto questo. Poi questo. E niente poi va a finire che. Eh si è successo questo. Abbiamo deciso così. È stato fatto questo. Quindi poi niente, ha fatto questo. Poi è successo che. Infatti poi praticamente. È stato fatto questo. Hanno deciso di fare. E niente poi va a finire che. Ma pensa che poi. Non so se hai capito che è successo questo. È avvenuto questo. Praticamente ho fatto questo. Ho deciso questo. Ha fatto così. Eh si è successo questo. Infatti poi praticamente. Pensa che. Si è successo così. Praticamente ho fatto questo. Sai che. Poi questo. Oggi ho fatto. Ha deciso così. Ieri sono stata. È successo questo. E niente poi è andata a finire che. È successo questo. Poi è successo che. Infatti poi praticamente. Pensa che. Non so se ti rendi conto che. Si è successo così. Praticamente ho fatto questo. Poi questo. E niente poi va a finire che. Eh si è successo questo. Abbiamo deciso così. È stato fatto questo. Quindi poi niente, ha fatto questo. Poi è successo che. Infatti poi praticamente. È stato fatto questo. Hanno deciso di fare. E niente poi va a finire che. Ma pensa che poi. Non so se hai capito che è successo questo. È avvenuto questo. Praticamente ho fatto questo. Ho deciso questo. Ha fatto così. Eh si è successo questo. Infatti poi praticamente. Pensa che. Si è successo così. Praticamente ho fatto questo. Sai che. Poi questo. Oggi ho fatto. Ha deciso così. Ieri sono stata. È successo questo. E niente poi è andata a finire che. È successo questo. Poi è successo che. Infatti poi praticamente. Pensa che. Non so se ti rendi conto che. Si è successo così. Praticamente ho fatto questo. Poi questo. E niente poi va a finire che. Eh si è successo questo. Abbiamo deciso così. È stato fatto questo. Quindi poi niente, ha fatto questo. Poi è successo che. Infatti poi praticamente. È stato fatto questo. Hanno deciso di fare. E niente poi va a finire che. Ma pensa che poi. Non so se hai capito che è successo questo. È avvenuto questo. Praticamente ho fatto questo. Ho deciso questo. Ha fatto così. Eh si è successo questo. Infatti poi praticamente. Pensa che. Si è successo così. Praticamente ho fatto questo. Sai che. Poi questo. Oggi ho fatto. Ha deciso così. Ieri sono stata. È successo questo. E niente poi è andata a finire che</h1>
+</body>
+</html>
